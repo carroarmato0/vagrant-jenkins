@@ -1,1 +1,10 @@
 ---
+jenkins::executors: 0
+
+jenkins::plugin_hash:
+  'git': {}
+  'git-client': {}
+  'scm-api': {}
+  'token-macro': {}
+
+jenkins::slave::masterurl: 'http://192.168.33.21:8080'

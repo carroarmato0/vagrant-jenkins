@@ -3,6 +3,7 @@ node /master/ {
 
   include common
   include jenkins
+  include jenkins::master
 
 }
 
