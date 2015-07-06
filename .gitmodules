@@ -1,0 +1,9 @@
+[submodule "modules/concat"]
+	path = modules/concat
+	url = git@github.com:puppetlabs/puppetlabs-concat.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = git@github.com:puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/jenkins"]
+	path = modules/jenkins
+	url = git@github.com:jenkinsci/puppet-jenkins.git
