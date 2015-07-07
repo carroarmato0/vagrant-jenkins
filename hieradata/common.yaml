@@ -10,5 +10,7 @@ jenkins::plugin_hash:
   'cloudbees-folder': {}
   'rebuild': {}
   'parameterized-trigger': {}
+  'jobConfigHistory': {}
+  'buildtriggerbadge': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
