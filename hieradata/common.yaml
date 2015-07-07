@@ -8,5 +8,7 @@ jenkins::plugin_hash:
   'token-macro': {}
   'copyartifact': {}
   'cloudbees-folder': {}
+  'rebuild': {}
+  'parameterized-trigger': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
