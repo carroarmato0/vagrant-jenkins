@@ -12,5 +12,6 @@ jenkins::plugin_hash:
   'parameterized-trigger': {}
   'jobConfigHistory': {}
   'buildtriggerbadge': {}
+  'ansicolor': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
