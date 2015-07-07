@@ -22,13 +22,18 @@ node default {
 
 class common {
 
-	$default_pkg = [
-		'git',
-	]
+  $default_pkg = [
+    'git',
+  ]
 
-	package { $default_pkg:
-		ensure => installed,
-	}
+  package { $default_pkg:
+    ensure => installed,
+  }
+
+  service { 'iptables':
+    enable => false,
+    ensure => stopped,
+  }
 
 }
 
