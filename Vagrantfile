@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
   end
 
   # Clear firewall rules to allow intermachine communication
-  config.vm.provision "shell", inline: "iptables -F", run: "once"
+  config.vm.provision "shell", inline: "service iptables stop; chkconfig iptables off;"
 
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path     = "manifests"

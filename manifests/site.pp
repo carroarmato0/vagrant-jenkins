@@ -30,11 +30,6 @@ class common {
     ensure => installed,
   }
 
-  service { 'iptables':
-    enable => false,
-    ensure => stopped,
-  }
-
 }
 
 if $::puppetversion >= '3.6.1' {
