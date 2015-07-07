@@ -3,6 +3,7 @@ Puppet POC with the upstream jenkins module
 
 ## What you get
 
+- 3 VM's using Centos 6.6 with the Virtualbox guest utils installed and Puppet.
 - Jenkins Master which doesn't have executors
 - A couple of slaves automatically connecting to the Master with 2 executors each
 - Some default plugins added by default (check hieradata/common.yaml for the listing)
