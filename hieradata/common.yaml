@@ -13,5 +13,6 @@ jenkins::plugin_hash:
   'jobConfigHistory': {}
   'buildtriggerbadge': {}
   'ansicolor': {}
+  'greenballs': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
