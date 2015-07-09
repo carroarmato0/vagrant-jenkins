@@ -13,3 +13,12 @@
 [submodule "modules/staging"]
 	path = modules/staging
 	url = git@github.com:nanliu/puppet-staging.git
+[submodule "modules/epel"]
+	path = modules/epel
+	url = git@github.com:stahnma/puppet-module-epel.git
+[submodule "modules/python"]
+	path = modules/python
+	url = git@github.com:stankevich/puppet-python.git
+[submodule "modules/jjb"]
+	path = modules/jjb
+	url = git@github.com:carroarmato0/puppet-jjb.git

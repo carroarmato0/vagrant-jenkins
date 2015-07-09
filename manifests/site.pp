@@ -22,6 +22,8 @@ node default {
 
 class common {
 
+  include jjb
+
   $default_pkg = [
     'git',
   ]
