@@ -1,16 +1,32 @@
 
 node /master/ {
 
-  include common
   include jenkins
   include jenkins::master
+  include common
+
+  exec { 'Pull initial Repo':
+    command   => 'git clone https://github.com/KrisBuytaert/jenkins-dsl-playground.git',
+    path      => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
+    logoutput => true,
+    notify    => Exec['Create DSL Pipeline'],
+    unless    => ["test -d ./jenkins-dsl-playground"]
+  }
+
+  exec { 'Create DSL Pipeline':
+    command     => 'sleep 30; jenkins-jobs update ./jenkins-dsl-playground/jenkins-dsl-pipeline.yaml',
+    path        => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
+    refreshonly => true,
+  }
+
+  Package['git'] -> Class['jenkins::master'] -> Class['jjb'] -> Service['jenkins'] -> Exec['Pull initial Repo']
 
 }
 
 node /slave/ {
 
-  include common
   include jenkins::slave
+  include common
 
 }
 
@@ -24,11 +40,7 @@ class common {
 
   include jjb
 
-  $default_pkg = [
-    'git',
-  ]
-
-  package { $default_pkg:
+  package { 'git':
     ensure => installed,
   }
 
