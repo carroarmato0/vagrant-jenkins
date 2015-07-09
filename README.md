@@ -7,6 +7,7 @@ Puppet POC with the upstream jenkins module
 - Jenkins Master which doesn't have executors
 - A couple of slaves automatically connecting to the Master with 2 executors each
 - Some default plugins added by default (check hieradata/common.yaml for the listing)
+- A Pipeline preloader which installs a selfconfiguring pipeline using samples from https://github.com/KrisBuytaert/jenkins-dsl-playground
 
 ## How to update - (Note: execute this the first time as well)
 
