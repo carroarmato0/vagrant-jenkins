@@ -18,3 +18,4 @@ jenkins::plugin_hash:
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
 jjb::jenkins_url: 'http://192.168.33.21:8080'
+jjb::recursive: true
