@@ -15,6 +15,7 @@ jenkins::plugin_hash:
   'ansicolor': {}
   'greenballs': {}
   'checkstyle': {}
+  'clone-workspace-scm': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
