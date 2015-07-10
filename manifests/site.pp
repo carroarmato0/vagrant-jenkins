@@ -39,10 +39,7 @@ node default {
 class common {
 
   include jjb
-
-  package { 'git':
-    ensure => installed,
-  }
+  package { 'git': }
 
 }
 
