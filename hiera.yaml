@@ -4,6 +4,7 @@
 
 :hierarchy:
   - "nodes/%{::hostname}"
+  - "overrides"
   - "common"
 
 :yaml:
