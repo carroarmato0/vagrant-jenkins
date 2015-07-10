@@ -39,6 +39,7 @@ node default {
 class common {
 
   include jjb
+  include timezone
   package { 'git': }
 
 }

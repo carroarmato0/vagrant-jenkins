@@ -22,3 +22,6 @@
 [submodule "modules/jjb"]
 	path = modules/jjb
 	url = git@github.com:carroarmato0/puppet-jjb.git
+[submodule "modules/timezone"]
+	path = modules/timezone
+	url = https://github.com/saz/puppet-timezone.git
