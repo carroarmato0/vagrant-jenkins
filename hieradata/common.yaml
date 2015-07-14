@@ -16,6 +16,8 @@ jenkins::plugin_hash:
   'greenballs': {}
   'checkstyle': {}
   'clone-workspace-scm': {}
+  'build-pipeline-plugin': {}
+  'email-ext': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
