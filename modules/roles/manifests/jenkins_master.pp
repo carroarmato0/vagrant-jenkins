@@ -16,7 +16,7 @@ class roles::jenkins_master {
     path    => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
     onlyif  => 'test -d /var/lib/jenkins/jobs/jenkins-dsl-checkout/',
     creates => '/home/vagrant/.initialbuildsuccess',
-    require => [ Class['jjb'], Service['jenkins'], ],
+    require => [ Class['jjb'], Service['jenkins'], Jenkins::Cli::Exec['set_num_executors'], ],
   }
 
 }
