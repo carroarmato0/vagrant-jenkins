@@ -14,7 +14,7 @@ class roles::jenkins_master {
   exec { 'Initial DSL Pipeline Trigger':
     command => 'curl --silent --show-error http://localhost:8080/job/jenkins-dsl-checkout/build && touch /home/vagrant/.initialbuildsuccess',
     path    => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
-    unless  => 'test -d /var/lib/jenkins/jobs/jenkins-dsl-checkout/',
+    onlyif  => 'test -d /var/lib/jenkins/jobs/jenkins-dsl-checkout/',
     creates => '/home/vagrant/.initialbuildsuccess',
     require => [ Class['jjb'], Service['jenkins'], ],
   }
