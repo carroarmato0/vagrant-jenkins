@@ -18,6 +18,7 @@ jenkins::plugin_hash:
   'clone-workspace-scm': {}
   'build-pipeline-plugin': {}
   'email-ext': {}
+  'promoted-builds': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
