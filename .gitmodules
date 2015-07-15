@@ -25,3 +25,6 @@
 [submodule "modules/timezone"]
 	path = modules/timezone
 	url = https://github.com/saz/puppet-timezone.git
+[submodule "jenkins-dsl-playground"]
+	path = jenkins-dsl-playground
+	url = https://github.com/KrisBuytaert/jenkins-dsl-playground.git
