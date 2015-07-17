@@ -19,6 +19,7 @@ jenkins::plugin_hash:
   'build-pipeline-plugin': {}
   'email-ext': {}
   'promoted-builds': {}
+  'build-pipeline-plugin': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
