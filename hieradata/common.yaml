@@ -21,6 +21,7 @@ jenkins::plugin_hash:
   'promoted-builds': {}
   'build-pipeline-plugin': {}
   'ws-cleanup': {}
+  'artifactory': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
