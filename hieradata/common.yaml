@@ -20,6 +20,7 @@ jenkins::plugin_hash:
   'email-ext': {}
   'promoted-builds': {}
   'build-pipeline-plugin': {}
+  'ws-cleanup': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
