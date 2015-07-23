@@ -23,6 +23,8 @@ jenkins::plugin_hash:
   'ws-cleanup': {}
   'artifactory': {}
   'managed-scripts': {}
+  'envinject': {}
+  'maven-info': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
