@@ -25,6 +25,7 @@ jenkins::plugin_hash:
   'managed-scripts': {}
   'envinject': {}
   'maven-info': {}
+  'build-name-setter': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
