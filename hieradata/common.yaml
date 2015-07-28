@@ -26,6 +26,7 @@ jenkins::plugin_hash:
   'envinject': {}
   'maven-info': {}
   'build-name-setter': {}
+  'buildgraph-view': {}
 
 jenkins::slave::masterurl: 'http://192.168.33.21:8080'
 
